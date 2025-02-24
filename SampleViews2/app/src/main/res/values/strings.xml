@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">SampleViews2</string>
+  <string-array name="tv_shows">
+    <item>Breaking Bad</item>
+    <item>Game of Thrones</item>
+    <item>Pataal Lok</item>
+    <item>Black Warrant</item>
+    <item>Last of Us</item>
+  </string-array>
+</resources>

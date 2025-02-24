@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  tools:context=".MainActivity">
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="108dp"
+    android:text="Hello World!"
+    android:id="@+id/txt_view"
+    android:textSize="28sp"
+    android:textColor="#FF0000"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+    android:id="@+id/txt_name"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="30dp"
+    android:layout_marginTop="60dp"
+    android:hint="@string/hint_name"
+    android:textColorHint="#646464"
+    android:importantForAutofill="no"
+    android:inputType="textPersonName"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.733"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txt_view" />
+
+  <Button
+    android:id="@+id/btn_click"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="64dp"
+    android:text="Click me"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="@+id/txt_name"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintStart_toStartOf="@+id/txt_name"
+    app:layout_constraintTop_toBottomOf="@+id/txt_name"
+    tools:ignore="HardcodedText" />
+
+  <LinearLayout
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginTop="56dp"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_click">
+
+    <ImageView
+      android:id="@+id/img_view"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:contentDescription="Orange flashlight"
+      android:src="@drawable/orange_flashlight"
+      tools:ignore="HardcodedText" />
+
+    <Space
+      android:layout_width="20dp"
+      android:layout_height="20dp"/>
+
+    <ImageButton
+      android:id="@+id/img_btn"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:backgroundTint="#FFFFFF"
+      android:contentDescription="Red flashlight"
+      android:scaleType="fitCenter"
+      android:src="@drawable/baseline_flashlight_on_24"
+      tools:ignore="HardcodedText" />
+
+  </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
