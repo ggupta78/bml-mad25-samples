@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".SecondActivity">
+
+  <TextView
+    android:id="@+id/textView"
+    android:layout_marginTop="20dp"
+    android:text="@string/brand_name"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    style="@style/LeftAlignedTextView.BrandName" />
+
+  <TextView
+    android:id="@+id/textView2"
+    android:text="@string/brand_tagline"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView"
+    style="@style/BrandTagline" />
+
+  <TextView
+    android:id="@+id/textView3"
+    android:layout_marginTop="50dp"
+    android:text="Your Email"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView2"
+    style="@style/LeftAlignedTextView" />
+
+  <EditText
+    android:id="@+id/editTextEmailAddress"
+    android:layout_marginTop="10dp"
+    android:ems="10"
+    android:inputType="textEmailAddress"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView3"
+    style="@style/LeftAlignedTextView" />
+
+  <CheckBox
+    android:id="@+id/checkBox"
+    style="@style/LeftAlignedTextView"
+    android:layout_marginStart="40dp"
+    android:layout_marginTop="84dp"
+    android:text="Remember Me"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+  <Button
+    android:id="@+id/button"
+    android:layout_marginTop="50dp"
+    android:textSize="20sp"
+    android:text="Log In"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/checkBox"
+    style="@style/LeftAlignedTextView"/>
+
+  <Button
+    android:id="@+id/button3"
+    android:layout_marginTop="10dp"
+    android:text="Sign Up"
+    android:textSize="20sp"
+    app:backgroundTint="?attr/colorSecondaryVariant"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button"
+    style="@style/LeftAlignedTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
